@@ -1,0 +1,30 @@
+/* Nav bar */
+.navbar{
+    height: 60px;
+    padding: 3.3rem 0px;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+.navbar nav .flex{
+    justify-content: space-between;
+}
+.navbar nav li{
+    margin: auto 1rem ;
+}
+.navbar nav li a:hover{
+    opacity: 0.7;
+}
+.navbar img{
+    margin-top:15px;
+}
+
+
+/* Section 1 */
+.section1{
+    position: relative;
+}
+.section1 img{
+    position: relative;
+    top: -25px;
+}
