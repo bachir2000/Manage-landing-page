@@ -58,8 +58,8 @@ ul{
 
 .decoration{
     position: absolute;
-    right: -30px;
-    top: -110px;
+    right: -50px;
+    top: -150px;
     height: 45rem;
     z-index: -1;
 }
@@ -84,16 +84,11 @@ ul{
     left: 40px;
     bottom: -300px;
 }
-
-
-
-
-
 .primary-btn{
     cursor: pointer;
     font-weight: 400;
-    width: 128px;
-    height: 38px;
+    min-width: 130px;
+    min-height: 38px;
     font-size: 15px;
     color: white;
     background-color: var(--Bright-Red);
@@ -104,6 +99,7 @@ ul{
     -webkit-box-shadow: 3px 11px 16px -9px rgba(242,95,58,0.75);
     -moz-box-shadow: 3px 11px 16px -9px rgba(242,95,58,0.75);
     z-index: 1;
+    border: none;
 }
 .primary-btn:hover{
     opacity: 0.8;
@@ -206,3 +202,13 @@ ul{
     margin-bottom: 0rem;
 }
 
+
+.error-text{
+    color: red;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.desabled{
+    display: none;
+}

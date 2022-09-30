@@ -71,9 +71,6 @@
     text-align: center;
     position: relative;
 }
-/* .section3 .flex{
-    overflow-y: scroll;
-} */
 
 /* Sub footer */
 
@@ -100,10 +97,7 @@
 
 .footer .flex{
     justify-content: space-between;
-    align-items: flex-start;
-}
-.footer  .flex{
-    justify-content: space-between;
+    align-items: stretch;
 }
 
 .footer .container .social,
@@ -114,12 +108,12 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .footer .container .social,.footer .footer-section4
 {
-    gap: 60px;
+    gap: 50px;
 }
 .social-links{
     gap: 10px;
@@ -138,23 +132,31 @@
     font-size: 0.9rem;
 }
 
-.footer .footer-section4 input[type='text']{
+.footer .footer-section4 input[type='email']{
     padding: 11px 15px;
     font-size: 0.9rem;
     color: var(--Vary-Light-Gray);
     border-radius: 40px;
     margin-right: 10px;
-    color: black;
+    color: var(--Bright-Red);
     outline: none;
+    border: none;
 }
 .footer .primary-btn{
     text-align: center;
-    width: 60px;
+    min-width: 60px;
     padding: 13px 5px;
     height: auto;
     box-shadow: none;
+    border-radius: 30px;
 }
 .footer .primary-btn:hover{
     opacity: 1;
     color: rgba(255, 255, 255, 0.662)
+}
+
+.footer .footer-section4 .grid{
+    grid-template-columns: 4fr 1fr;
+    gap: 2px;
+
 }
