@@ -90,6 +90,7 @@ ul{
 
 
 .primary-btn{
+    cursor: pointer;
     font-weight: 400;
     width: 128px;
     height: 38px;
@@ -102,6 +103,7 @@ ul{
     box-shadow: 3px 11px 16px -9px rgba(242,95,58,0.75);
     -webkit-box-shadow: 3px 11px 16px -9px rgba(242,95,58,0.75);
     -moz-box-shadow: 3px 11px 16px -9px rgba(242,95,58,0.75);
+    z-index: 1;
 }
 .primary-btn:hover{
     opacity: 0.8;
@@ -189,12 +191,12 @@ ul{
     margin-bottom: 2rem;
 }
 .my-3{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-.my-4{
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
+}
+.my-4{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 .my-5{
     margin-top: 5rem;
