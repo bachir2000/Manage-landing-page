@@ -12,19 +12,24 @@
      --Bright-Red : hsl(12, 88%, 59%);
      --Dark-Blue: hsl(228, 39%, 23%);
      /*  Neutral */
-     --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
     --Very-Dark-Blue: hsl(233, 12%, 13%);
     --Very-Pale-Red: hsl(13, 100%, 96%);
     --Vary-Light-Gray: hsl(0, 0%, 98%);
 }
 
 /* General styling */
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     height: 100vh;
     position: relative;   
+    overflow-x: hidden;
 }
-
+p{
+    line-height: 1.5rem;
+}
 a{
     text-decoration: none;
     color: var(--Dark-Blue);
@@ -34,9 +39,10 @@ ul{
 }
 
 .container{
-    width: 1100px;
+    width: 1080px;
     margin: auto;
     height: 100%;
+    padding: 10px;
 }
 .flex{
     display: flex;
@@ -47,7 +53,7 @@ ul{
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 100px;
 }
 
 .decoration{
@@ -57,13 +63,37 @@ ul{
     height: 45rem;
     z-index: -1;
 }
+.section3 .decoration{
+    position: absolute;
+    left: -350px;
+    top: -350px;
+    bottom: 0px;
+    right : 0;
+    height: 41rem;
+    z-index: -1;
+}
+.sub-footer .decoration{
+    height: 30rem;
+    z-index: 0;
+    top: -300px;
+    right: -280px;
+    opacity: 0.09;
+}
+.sub-footer .decoration2{
+    top: 0;
+    left: 40px;
+    bottom: -300px;
+}
 
 
 
 
 
 .primary-btn{
-    font-size: 16px;
+    font-weight: 400;
+    width: 128px;
+    height: 38px;
+    font-size: 15px;
     color: white;
     background-color: var(--Bright-Red);
     border-radius: 20px;
@@ -77,20 +107,54 @@ ul{
     opacity: 0.8;
 }
 
+.secondary-btn{
+    background-color: var(--Very-Pale-Red);
+    color: var(--Bright-Red);
+}
+.secondary-btn:hover{
+    opacity: 1;
+    color: hsla(12, 88%, 59%, 0.623);
+}
+
+.avatar{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    transform: translateY(-30px);
+}
+.card{
+    padding: 5px 30px 30px 30px;
+    margin: 15px;
+    text-align: center;
+    background-color: var(--Vary-Light-Gray);
+    width: 450px;
+    min-width: 500px;
+
+}
+.card h5{
+    margin-bottom: 10px;
+}
+
 /* Fonts */
 
 .sm{
-    font-size: 0.9rem;
+    font-size: 0.92rem;
     font-weight: 300;
+    color: var(--Dark-Grayish-Blue)
 }
 .md{
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .lg{
     font-size: 2rem;
 }
 .xl{
     font-size: 3rem;
+}
+
+.tx-center{
+    text-align: center;
 }
 
 
@@ -136,3 +200,7 @@ ul{
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
+.no-m-btm{
+    margin-bottom: 0rem;
+}
+
