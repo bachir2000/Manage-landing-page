@@ -19,12 +19,8 @@
 }
 
 /* General styling */
-html{
-    scroll-behavior: smooth;
-}
 body{
     height: 100vh;
-    position: relative;   
     overflow-x: hidden;
 }
 p{
@@ -37,10 +33,9 @@ a{
 ul{
     list-style: none;
 }
-
 .container{
-    width: 1080px;
-    margin: auto;
+    max-width: 1050px;
+    margin: 0 auto;
     height: 100%;
     padding: 10px;
 }
@@ -208,7 +203,6 @@ ul{
     font-size: 0.8rem;
     margin-left: 10px;
 }
-
 .desabled{
-    display: none;
+    visibility: hidden;
 }

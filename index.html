@@ -3,21 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/utilities.css">
+  <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Frontend Mentor | Manage landing page</title>
 </head>
 <body>
-  <img class="decoration" src="images/bg-tablet-pattern.svg">
+
   <!-- Nav bar -->
+  <img class="decoration" src="images/bg-tablet-pattern.svg">
   <div class="navbar">
     <div class="container flex">
+      <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <div class="logo">
         <img src="images/logo.svg" alt="logo" height="18px">
       </div>
-      
-      <nav>
+      <nav class="active">
         <ul class="flex">
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Product</a></li>
@@ -107,18 +113,18 @@
       <h2 class="lg tx-center my-1">What they've said</h2>
       <div class="card-container my-5 flex">
         <div class="card">
-          <img src="images/avatar-anisha.png" class="avatar">
-          <h5 class="md">Anisha Li</h5>
-          <p class="sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident excepturi fugit dolore saepe commodi nisi nostrum animi similique? In, non.</p>
-        </div>
-        <div class="card">
           <img src="images/avatar-ali.png" class="avatar">
-          <h5 class="md">Anisha Li</h5>
+          <h5 class="md">Ali Bravo</h5>
           <p class="sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident excepturi fugit dolore saepe commodi nisi nostrum animi similique? In, non.</p>
         </div>
         <div class="card">
           <img src="images/avatar-shanai.png" class="avatar">
           <h5 class="md">Anisha Li</h5>
+          <p class="sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident excepturi fugit dolore saepe commodi nisi nostrum animi similique? In, non.</p>
+        </div>
+        <div class="card">
+          <img src="images/avatar-richard.png" class="avatar">
+          <h5 class="md">Richard Watts</h5>
           <p class="sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident excepturi fugit dolore saepe commodi nisi nostrum animi similique? In, non.</p>
         </div>
       </div>
@@ -143,48 +149,49 @@
 <!-- Footer -->
 <footer class="footer py-4">
   <div class="container flex">
-    <div class="social flex">
-      <div class="logo">
-        <img src="images/logoLight.svg" alt="logo" height="18px">
+
+      <div class="social flex">
+        <div class="logo">
+          <img src="images/logoLight.svg" alt="logo" height="18px">
+        </div>
+        <div class="social-links flex">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
       </div>
-      <div class="social-links flex">
-        <i class="fa-brands fa-square-facebook"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-square-twitter"></i>
-        <i class="fa-brands fa-pinterest"></i>
-        <i class="fa-brands fa-instagram"></i>
+      <div class="resp-footer">
+        <div class="footer-section2">
+          <nav>
+            <ul class="flex">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+
+          <div class="footer-section3">
+            <nav>
+              <ul class="flex">
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </nav>
+          </div>
+    </div>
+      <div class="footer-section4 flex">
+        <form class="grid">
+          <input type="email" placeholder="Update in your inbox..." class="email">
+          <button type="button" class="primary-btn">Go</button>
+          <p class="sm error-text desabled">Please insert a valid email</p>
+        </form>
+        <p class="sm copyright">Copyright 2020. All right reserved</p>
       </div>
-    </div>
-
-    <div class="footer-section2">
-      <nav>
-        <ul class="flex">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About Us</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="footer-section3">
-      <nav>
-        <ul class="flex">
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="footer-section4 flex">
-      <form class="grid">
-        <input type="email" placeholder="Update in your inbox..." class="email">
-        <button type="button" class="primary-btn">Go</button>
-        <p class="sm error-text desabled">Please insert a valid email</p>
-      </form>
-      <p class="sm">Copyright 2020. All right reserved</p>
-    </div>
   </div>
 </footer>
 </body>
